@@ -16,17 +16,20 @@
             });
         }
 
-        function downloadAndRedirect() {
-            const link = document.createElement('a');
-            link.href = 'wof.sb3'; // Assure-toi que ce chemin est correct
-            link.download = 'wof.sb3'; // Nom du fichier téléchargé
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            setTimeout(() => {
-                window.location.href = 'help.html';
-            }, 100); // Attendre 100ms pour laisser le temps au téléchargement
-        }
+      function downloadAndRedirect() {
+    const link = document.createElement('a');
+    link.href = 'https://www.mediafire.com/file/h4lm9vrqkk7l0el/war+of+futur+V1.0.sb3/file'; // Lien MediaFire
+    link.target = '_blank'; // Ouvre le lien dans un nouvel onglet
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Redirige vers la page d'aide après un court délai
+    setTimeout(() => {
+        window.location.href = 'help.html';
+    }, 500); // Attendre 500ms pour donner du temps à l'ouverture du lien
+}
+
     </script>
 </head>
 <body>
