@@ -1,0 +1,163 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('image\ trailer.webp') no-repeat fixed ; /* Image de fond */
+    background-size: cover;
+    overflow-y: hidden;
+    background-attachment: fixed;
+}
+
+main {
+    display: flex;
+    align-items: flex-end;
+    height: 90vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, #333 100%); /* Dégradé vers gris */
+}
+
+/* Game Title */
+.game-info h1 {
+    font-size: 40px;
+    position: relative;
+    top: -260px;
+    font-weight: bold;
+    color: white;
+}
+
+ p{
+    font-size: 20px;
+    position: relative;
+    top: -260px;
+    font-weight: bold;
+    color: white;
+ }
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px #9d00ff);
+}
+
+.cloud-text {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.beta-text {
+    font-size: 1rem;
+    font-family: fantasy;
+    color: #ff5733;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: #1a1b1e;
+    color: #fff;
+    border-bottom: 2px solid #9d00ff;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.search::placeholder {
+    color: #9d00ff;
+}
+
+.search:focus {
+    border-bottom: 2px solid #ff00ff;
+}
+
+.icon {
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px #9d00ff);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.buttons {
+    position: relative;
+    top: -210px;
+}
+
+.play {
+    background-color: rgb(173, 1, 173);
+    border: none;
+    width: 300px;
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    height: 40px;
+    border-radius: 12px;
+}
+
+.play:hover {
+    background-color: rgb(130, 2, 130);
+}
+
+.share {
+    width: 50px;
+    height: auto;
+    position: relative;
+    top: 18px;
+    border-radius: 20px;
+}
+
+
+.game-info{
+  position: relative;
+  right: -30px;
+  top: 50px;
+}
+
+.jackette {
+    position: relative;
+    border-radius: 15px;
+    left: 400px;
+    top: -50px;
+    width: auto;
+    height: 400px;
+}

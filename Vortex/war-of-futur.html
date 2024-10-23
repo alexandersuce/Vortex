@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jouer à War Of Futur | Vortex©️</title>
+    <link rel="stylesheet" href="style-page-games.css">
+    <link rel="icon" href="logo.png">
+    <script>
+        // Fonction pour copier le lien de la page dans le presse-papiers
+        function copyLink() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('Lien copié dans le presse-papiers !');
+            }).catch(err => {
+                console.error('Erreur lors de la copie :', err);
+            });
+        }
+
+        function downloadAndRedirect() {
+            const link = document.createElement('a');
+            link.href = 'wof.sb3'; // Assure-toi que ce chemin est correct
+            link.download = 'wof.sb3'; // Nom du fichier téléchargé
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            setTimeout(() => {
+                window.location.href = 'help.html';
+            }, 100); // Attendre 100ms pour laisser le temps au téléchargement
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <a href="index.html">
+                <img src="logo.png" alt="Vortex Logo" class="logo">
+            </a>
+            <span class="cloud-text">Cloud Gaming</span>
+            <span class="beta-text">BETA</span>
+        </div>
+        <div class="right-header">
+            <a href="index.html">
+                <input type="text" class="search" placeholder="Rechercher un jeu...">
+            </a>
+            <img src="https://img.icons8.com/m_rounded/512/FFFFFF/appointment-reminders.png" alt="Notifications" class="icon">
+            <a href="profil.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/3408/3408506.png" alt="Profil" class="icon">
+        </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="game-info">
+            <h1>War of Futur</h1>
+            <p>Phoenix Craft Studio  ●  Jeux de tir</p>
+            <p>● Jeux doublé en anglais avec des sous-titres</p>
+            <div class="buttons">
+                <button class="play" onclick="downloadAndRedirect()">Obtenir le jeu</button>
+                <a href="#" class="share-button" onclick="copyLink(); return false;">
+                    <img alt="Partager" class="share" src="partager.png">
+                </a>
+            </div>
+        </div>
+        <img src="jackette.jpg" class="jackette">
+    </main>
+</body>
+</html>

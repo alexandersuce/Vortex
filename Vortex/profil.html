@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil | Vortex©️</title>
+    <link rel="stylesheet" href="style-profil.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Profil</h1>
+        <p><strong>Nom d'utilisateur :</strong> <span id="display-username"></span></p>
+        <p><strong>Email :</strong> <span id="display-email"></span></p>
+        <p><strong>Mot de passe :</strong> <span id="display-password"></span></p>
+        
+        <!-- Nouveau bouton "Jouer" -->
+        <button onclick="window.location.href='cloud.html'">Jouer</button>
+
+        <button onclick="window.location.href='log.html'">Se déconnecter</button>
+    </div>
+
+    <script>
+        // Récupérer les données du localStorage
+        document.getElementById('display-username').textContent = localStorage.getItem('username');
+        document.getElementById('display-email').textContent = localStorage.getItem('email');
+        document.getElementById('display-password').textContent = localStorage.getItem('password');
+    </script>
+</body>
+</html>

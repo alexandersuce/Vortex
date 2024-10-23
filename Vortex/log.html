@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion / Inscription | Vortex©️</title>
+    <link rel="stylesheet" href="style-log.css">
+    <link rel="icon" href="logo.png">
+    <script>
+        function saveUserData() {
+            // Récupérer les valeurs des champs de saisie
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Stocker les données dans localStorage
+            localStorage.setItem('username', username);
+            localStorage.setItem('email', email);
+            localStorage.setItem('password', password);
+
+            // Rediriger vers la page de profil
+            window.location.href = 'profil.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Connexion / Inscription</h1>
+        <form onsubmit="event.preventDefault(); saveUserData();">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" required>
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">S'inscrire / Se connecter</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Profile Container Styles */
+.profile-container {
+    background-color: rgba(25, 25, 25, 0.8); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Ombre douce */
+    text-align: center;
+}
+
+.profile-container h1 {
+    margin-bottom: 20px;
+    color: #9d00ff; /* Couleur violet néon */
+}
+
+button {
+    background-color: #9d00ff; /* Bouton violet néon */
+    color: #fff; /* Texte blanc pour le bouton */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px 0; /* Espacement entre les boutons */
+}
+
+button:hover {
+    background-color: #ff5733; /* Couleur au survol */
+    transition: background-color 0.3s ease; /* Transition douce */
+}
